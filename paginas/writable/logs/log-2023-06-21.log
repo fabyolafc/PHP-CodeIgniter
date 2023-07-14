@@ -1,0 +1,47 @@
+CRITICAL - 2023-06-21 01:17:19 --> syntax error, unexpected integer "1", expecting variable or "{" or "$"
+in APPPATH\Views\pagina2.php on line 17.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pagina2', [], true)
+ 3 APPPATH\Controllers\Home.php(35): view('pagina2', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->pagina2()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-21 01:17:40 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH\Views\pagina2.php on line 19.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pagina2', [], true)
+ 3 APPPATH\Controllers\Home.php(35): view('pagina2', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->pagina2()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-21 01:17:41 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH\Views\pagina2.php on line 19.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pagina2', [], true)
+ 3 APPPATH\Controllers\Home.php(35): view('pagina2', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->pagina2()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-21 01:17:56 --> Undefined constant "i"
+in APPPATH\Views\pagina2.php on line 18.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pagina2', [], true)
+ 4 APPPATH\Controllers\Home.php(35): view('pagina2', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->pagina2()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-21 01:18:30 --> Undefined constant "i"
+in APPPATH\Views\pagina2.php on line 18.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pagina2', [], true)
+ 4 APPPATH\Controllers\Home.php(35): view('pagina2', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->pagina2()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,66 @@
+CRITICAL - 2023-06-22 22:12:53 --> Undefined constant "i"
+in APPPATH\Views\pagina2.php on line 18.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pagina2', [], true)
+ 4 APPPATH\Controllers\Home.php(35): view('pagina2', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->pagina2()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-22 22:14:21 --> Undefined variable $nome
+in APPPATH\Views\pagina2.php on line 18.
+ 1 APPPATH\Views\pagina2.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nome', 'C:\\xampp\\htdocs\\paginas\\app\\Views\\pagina2.php', 18)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\paginas\\app\\Views\\pagina2.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pagina2', [], true)
+ 5 APPPATH\Controllers\Home.php(35): view('pagina2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->pagina2()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-22 22:15:59 --> syntax error, unexpected token "{"
+in APPPATH\Views\pagina2.php on line 18.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pagina2', [], true)
+ 3 APPPATH\Controllers\Home.php(35): view('pagina2', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->pagina2()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-22 22:15:59 --> syntax error, unexpected token "{"
+in APPPATH\Views\pagina2.php on line 18.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pagina2', [], true)
+ 3 APPPATH\Controllers\Home.php(35): view('pagina2', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->pagina2()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-22 22:16:00 --> syntax error, unexpected token "{"
+in APPPATH\Views\pagina2.php on line 18.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pagina2', [], true)
+ 3 APPPATH\Controllers\Home.php(35): view('pagina2', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->pagina2()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-22 22:17:35 --> syntax error, unexpected token "{"
+in APPPATH\Views\pagina2.php on line 18.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pagina2', [], true)
+ 3 APPPATH\Controllers\Home.php(35): view('pagina2', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->pagina2()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-22 22:17:46 --> syntax error, unexpected token "{"
+in APPPATH\Views\pagina2.php on line 18.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('pagina2', [], true)
+ 3 APPPATH\Controllers\Home.php(35): view('pagina2', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->pagina2()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
