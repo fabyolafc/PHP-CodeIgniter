@@ -1,0 +1,167 @@
+ERROR - 2024-01-05 12:53:42 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'clientes' in C:\xampp\htdocs\IFNMG\agendamentos\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\IFNMG\agendamentos\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'clientes', 3306, '', 0)
+#1 C:\xampp\htdocs\IFNMG\agendamentos\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\IFNMG\agendamentos\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\IFNMG\agendamentos\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\IFNMG\agendamentos\app\Models\ClienteModel.php(49): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\IFNMG\agendamentos\app\Controllers\Home.php(15): App\Models\ClienteModel->getClientes()
+#6 C:\xampp\htdocs\IFNMG\agendamentos\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#7 C:\xampp\htdocs\IFNMG\agendamentos\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\IFNMG\agendamentos\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\IFNMG\agendamentos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'clientes' in C:\xampp\htdocs\IFNMG\agendamentos\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\IFNMG\agendamentos\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\IFNMG\agendamentos\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\IFNMG\agendamentos\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\IFNMG\agendamentos\app\Models\ClienteModel.php(49): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\IFNMG\agendamentos\app\Controllers\Home.php(15): App\Models\ClienteModel->getClientes()
+#5 C:\xampp\htdocs\IFNMG\agendamentos\system\CodeIgniter.php(932): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\IFNMG\agendamentos\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\IFNMG\agendamentos\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\IFNMG\agendamentos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-05 12:53:42 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'clientes'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `clientes`', [], false)
+ 3 APPPATH\Models\ClienteModel.php(49): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Home.php(15): App\Models\ClienteModel->getClientes()
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 13:25:28 --> Class "App\Models\ClienteModel" not found
+in APPPATH\Controllers\Home.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 13:51:39 --> Undefined variable $clientes
+in APPPATH\Views\index.php on line 59.
+ 1 APPPATH\Views\index.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $clientes', 'C:\\xampp\\htdocs\\IFNMG\\agendamentos\\app\\Views\\index.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\IFNMG\\agendamentos\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Home.php(21): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-05 14:04:35 --> mysqli_sql_exception: Column 'data_consulta' cannot be null in C:\xampp\htdocs\IFNMG\agendamentos\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\IFNMG\agendamentos\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `ag...', 0)
+#1 C:\xampp\htdocs\IFNMG\agendamentos\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ag...')
+#2 C:\xampp\htdocs\IFNMG\agendamentos\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ag...')
+#3 C:\xampp\htdocs\IFNMG\agendamentos\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ag...', Array, false)
+#4 C:\xampp\htdocs\IFNMG\agendamentos\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\IFNMG\agendamentos\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\IFNMG\agendamentos\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\IFNMG\agendamentos\app\Controllers\Home.php(66): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\IFNMG\agendamentos\system\CodeIgniter.php(932): App\Controllers\Home->inserir()
+#9 C:\xampp\htdocs\IFNMG\agendamentos\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\IFNMG\agendamentos\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\IFNMG\agendamentos\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-01-05 14:04:35 --> Column 'data_consulta' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `agendamentos` (`cpf`, `nome_paciente`, `data_nasc`, `email`, `telefone`, `rua`, `bairro`, `numero`, `cidade`, `uf`, `cep`, `data_consulta`, `horario_consulta`, `profissional`, `motivo`, `sexo`) VALUES (\'121212\', \'Fabyola\', \'2024-01-19\', \'fabyolacampos20@gmail.com\', \'+5533988753282\', \'Tomires\', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `agendamentos` (`cpf`, `nome_paciente`, `data_nasc`, `email`, `telefone`, `rua`, `bairro`, `numero`, `cidade`, `uf`, `cep`, `data_consulta`, `horario_consulta`, `profissional`, `motivo`, `sexo`) VALUES (\'121212\', \'Fabyola\', \'2024-01-19\', \'fabyolacampos20@gmail.com\', \'+5533988753282\', \'Tomires\', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `agendamentos` (`cpf`, `nome_paciente`, `data_nasc`, `email`, `telefone`, `rua`, `bairro`, `numero`, `cidade`, `uf`, `cep`, `data_consulta`, `horario_consulta`, `profissional`, `motivo`, `sexo`) VALUES (\'121212\', \'Fabyola\', \'2024-01-19\', \'fabyolacampos20@gmail.com\', \'+5533988753282\', \'Tomires\', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `agendamentos` (`cpf`, `nome_paciente`, `data_nasc`, `email`, `telefone`, `rua`, `bairro`, `numero`, `cidade`, `uf`, `cep`, `data_consulta`, `horario_consulta`, `profissional`, `motivo`, `sexo`) VALUES (:cpf:, :nome_paciente:, :data_nasc:, :email:, :telefone:, :rua:, :bairro:, :numero:, :cidade:, :uf:, :cep:, :data_consulta:, :horario_consulta:, :profissional:, :motivo:, :sexo:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Home.php(66): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->inserir()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 14:26:44 --> Undefined array key "id"
+in APPPATH\Views\index.php on line 167.
+ 1 APPPATH\Views\index.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\IFNMG\\agendamentos\\app\\Views\\index.php', 167)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\IFNMG\\agendamentos\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Home.php(21): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 14:27:59 --> Undefined array key "prossifional"
+in APPPATH\Views\index.php on line 171.
+ 1 APPPATH\Views\index.php(171): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "prossifional"', 'C:\\xampp\\htdocs\\IFNMG\\agendamentos\\app\\Views\\index.php', 171)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\IFNMG\\agendamentos\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Home.php(21): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 14:28:19 --> Undefined array key "id"
+in APPPATH\Views\index.php on line 174.
+ 1 APPPATH\Views\index.php(174): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\IFNMG\\agendamentos\\app\\Views\\index.php', 174)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\IFNMG\\agendamentos\\app\\Views\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('index', [], true)
+ 5 APPPATH\Controllers\Home.php(21): view('index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 18:46:05 --> unlink(C:\xampp\htdocs\IFNMG\agendamentos\writable\debugbar/debugbar_1704479842.690049.json): No such file or directory
+in SYSTEMPATH\Debug\Toolbar\Collectors\History.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp\\htdocs\\IFNMG\\agendamentos\\writable\\debugbar/debugbar_1704479842.690049.json): No such file or directory', 'C:\\xampp\\htdocs\\IFNMG\\agendamentos\\system\\Debug\\Toolbar\\Collectors\\History.php', 76)
+ 2 SYSTEMPATH\Debug\Toolbar\Collectors\History.php(76): unlink('C:\\xampp\\htdocs\\IFNMG\\agendamentos\\writable\\debugbar/debugbar_1704479842.690049.json')
+ 3 SYSTEMPATH\Debug\Toolbar.php(497): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles('1704480364.730140', 20)
+ 4 SYSTEMPATH\Debug\Toolbar.php(474): CodeIgniter\Debug\Toolbar->format([...], 'html')
+ 5 APPPATH\Config\Events.php(46): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH\CodeIgniter.php(348): CodeIgniter\Events\Events::trigger('pre_system')
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 19:48:54 --> unlink(C:\xampp\htdocs\IFNMG\agendamentos\writable\debugbar/debugbar_1704482819.003372.json): No such file or directory
+in SYSTEMPATH\Debug\Toolbar\Collectors\History.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp\\htdocs\\IFNMG\\agendamentos\\writable\\debugbar/debugbar_1704482819.003372.json): No such file or directory', 'C:\\xampp\\htdocs\\IFNMG\\agendamentos\\system\\Debug\\Toolbar\\Collectors\\History.php', 76)
+ 2 SYSTEMPATH\Debug\Toolbar\Collectors\History.php(76): unlink('C:\\xampp\\htdocs\\IFNMG\\agendamentos\\writable\\debugbar/debugbar_1704482819.003372.json')
+ 3 SYSTEMPATH\Debug\Toolbar.php(497): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles('1704484133.773689', 20)
+ 4 SYSTEMPATH\Debug\Toolbar.php(474): CodeIgniter\Debug\Toolbar->format([...], 'html')
+ 5 APPPATH\Config\Events.php(46): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH\CodeIgniter.php(348): CodeIgniter\Events\Events::trigger('pre_system')
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 19:48:54 --> unlink(C:\xampp\htdocs\IFNMG\agendamentos\writable\debugbar/debugbar_1704482751.133327.json): No such file or directory
+in SYSTEMPATH\Debug\Toolbar\Collectors\History.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp\\htdocs\\IFNMG\\agendamentos\\writable\\debugbar/debugbar_1704482751.133327.json): No such file or directory', 'C:\\xampp\\htdocs\\IFNMG\\agendamentos\\system\\Debug\\Toolbar\\Collectors\\History.php', 76)
+ 2 SYSTEMPATH\Debug\Toolbar\Collectors\History.php(76): unlink('C:\\xampp\\htdocs\\IFNMG\\agendamentos\\writable\\debugbar/debugbar_1704482751.133327.json')
+ 3 SYSTEMPATH\Debug\Toolbar.php(497): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles('1704484133.419600', 20)
+ 4 SYSTEMPATH\Debug\Toolbar.php(474): CodeIgniter\Debug\Toolbar->format([...], 'html')
+ 5 APPPATH\Config\Events.php(46): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH\CodeIgniter.php(348): CodeIgniter\Events\Events::trigger('pre_system')
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 21:08:19 --> unlink(C:\xampp\htdocs\IFNMG\agendamentos\writable\debugbar/debugbar_1704487654.689226.json): No such file or directory
+in SYSTEMPATH\Debug\Toolbar\Collectors\History.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp\\htdocs\\IFNMG\\agendamentos\\writable\\debugbar/debugbar_1704487654.689226.json): No such file or directory', 'C:\\xampp\\htdocs\\IFNMG\\agendamentos\\system\\Debug\\Toolbar\\Collectors\\History.php', 76)
+ 2 SYSTEMPATH\Debug\Toolbar\Collectors\History.php(76): unlink('C:\\xampp\\htdocs\\IFNMG\\agendamentos\\writable\\debugbar/debugbar_1704487654.689226.json')
+ 3 SYSTEMPATH\Debug\Toolbar.php(497): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles('1704488897.806637', 20)
+ 4 SYSTEMPATH\Debug\Toolbar.php(474): CodeIgniter\Debug\Toolbar->format([...], 'html')
+ 5 APPPATH\Config\Events.php(46): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH\CodeIgniter.php(348): CodeIgniter\Events\Events::trigger('pre_system')
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-05 21:08:20 --> unlink(C:\xampp\htdocs\IFNMG\agendamentos\writable\debugbar/debugbar_1704488062.034170.json): No such file or directory
+in SYSTEMPATH\Debug\Toolbar\Collectors\History.php on line 76.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(C:\\xampp\\htdocs\\IFNMG\\agendamentos\\writable\\debugbar/debugbar_1704488062.034170.json): No such file or directory', 'C:\\xampp\\htdocs\\IFNMG\\agendamentos\\system\\Debug\\Toolbar\\Collectors\\History.php', 76)
+ 2 SYSTEMPATH\Debug\Toolbar\Collectors\History.php(76): unlink('C:\\xampp\\htdocs\\IFNMG\\agendamentos\\writable\\debugbar/debugbar_1704488062.034170.json')
+ 3 SYSTEMPATH\Debug\Toolbar.php(497): CodeIgniter\Debug\Toolbar\Collectors\History->setFiles('1704488900.194278', 20)
+ 4 SYSTEMPATH\Debug\Toolbar.php(474): CodeIgniter\Debug\Toolbar->format([...], 'html')
+ 5 APPPATH\Config\Events.php(46): CodeIgniter\Debug\Toolbar->respond()
+ 6 SYSTEMPATH\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+ 7 SYSTEMPATH\CodeIgniter.php(348): CodeIgniter\Events\Events::trigger('pre_system')
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
